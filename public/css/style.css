@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  nav {
+    background-color: #141414;
+    border-bottom: 3px solid #B20710;
+    box-sizing: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  nav img {
+    width: 11%;
+    padding-left: 0.5%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    padding: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #B20710;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+
+  section#message {
+    padding: 1.5rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+  
+  header {
+    display: flexbox;
+    border-bottom: 3px solid white;
+    align-items: center;
+    background-color: #141414;
+    padding: 4rem 1rem 1rem 1rem;
+  }
+  
+  header article h1 {
+    color: #534d44;
+    font-size: 5rem;
+    padding: 0 4rem 2rem 4rem;
+  }
+  
+  header article p {
+    color: black;
+    font-size: 2rem;
+    padding-left: 4rem;
+  }
+  
+  header img {
+    display: flex;
+    width: 40%;
+    margin: 30px auto;
+    align-items: center;
+  }
+  
+  section#titulos {
+    color: #fff;
+    background-color: #141414;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  span#tituloFilmes {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #B20710;
+  }
+  
+  section#destaques {
+    background-color: #141414;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  section#destaques section.card {
+    background-color: #fff;
+    border-right: 12px;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    position: relative;
+  }
+  
+  #botaoEditar {
+    box-shadow:inset 0px 1px 0px 0px #f29c93;
+    background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+    background-color:#fe1a00;
+    border-radius:8px;
+    border:1px solid #d83526;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:10px;
+    font-weight:bold;
+    padding:5px 15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #b23e35;
+  }
+  #botaoEditar:hover {
+    background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+    background-color:#B20710;
+  }
+  #botaoEditar:active {
+    position:relative;
+    top:1px;
+  }
+
+  article#title {
+    width: 50%;
+  }
+  
+  article#title h2 {
+    padding: 1.5rem;
+  }
+  
+  article#content h3 {
+    font-size: 1.5rem;
+    padding: 3rem 3rem 1rem 3rem;
+  }
+  
+  article#content ul {
+    list-style: none;
+  }
+  
+  article#content ul li {
+    padding: 1rem 1rem 1rem 3rem;
+    font-size: 1.2rem;
+  }
+  
+  article#content a#inscrever {
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(68, 105, 255);
+    color: red;
+    border-radius: 3rem;
+    border: 0.2rem solid rgb(255, 238, 0);
+    transition: 0.5s;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+    right: 10rem;
+    top: 32rem;
+  }
+  
+  article#content a#inscrever:hover {
+    background-color: #141414;
+    color: rgb(68, 105, 255);
+    border: 0.2rem solid rgb(0, 27, 134);
+  }
+  
+  section#inscrever {
+    color: #fff;
+    background-color: #141414;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  section#inscrever form {
+    width: 50%;
+  }
+  
+  section#inscrever form div input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+  }
+  
+  section#inscrever form div label {
+    font-size: 1.3rem;
+  }
+  
+  section#inscrever form button {
+    border: 1px solid #B20710;
+    background-color: #fff;
+    color: #B20710;
+    padding: 1rem;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 3rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    width: 30%;
+  }
+  
+  section#inscrever form button:hover {
+    background-color: #B20710;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    color: white;
+    background-color: #141414;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  footer p a {
+    text-decoration: none;
+    color: #B20710;
+    transition: 0.5s;
+  }
+  
+  footer p a:hover {
+    color: white;
+    border: 1px solid #B20710;
+    background-color: #B20710;
+    border-radius: 3rem;
+    padding: 0.3rem;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Adicione um novo filme</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/img/logo net.png" class="img-fluid gif" alt="Animação Logo Blue">
+        <ul>
+            <li>
+                <a href="/#">Página Inicial</a>
+            </li>
+        </ul>
+    </nav>
+
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section id="inscrever">
+
+        <form action="/criar" method="POST">
+            <div>
+                <label for="nome">Digite o nome do filme: </label>
+                <input type="text" name="nome" id="filmes_nome" placeholder="Nome do filme" required>
+            </div>
+        
+            <div>
+                <label for="descricao">Digite a descrição do filme: </label>
+                <input type="text" name="descricao" id="filmes_descricao" placeholder="Descrição">
+            </div>
+
+            <div>
+                <label for="imagem">Coloque o link para a imagem do filme: </label>
+                <input type="text" name="imagem" id="filmes_imagem" placeholder="Link da imagem" required>
+            </div>
+        
+            <button type="submit">Criar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>
+            Copyright Netzon+ | <a href="https://instagram.com/rafmob" target="_blank"> @rafmob</a> . Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="/public/js/script.js"></script>
+</body>
+
+</html>
