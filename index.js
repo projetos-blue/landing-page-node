@@ -32,15 +32,15 @@ app.get("/criar", (req, res) => {
 });
 
 app.post("/criar", async (req, res) => {
-  const { nome, descricao, imagem } = req.body;
+  const { filmes_nome, filmes_descricao, filmes_imagem } = req.body;
 
-  if (!nome) {
+  if (!filmes_nome) {
     res.render("criar", {
       message: "Nome é obrigatório",
     });
   }
 
-  else if (!imagem) {
+  else if (!filmes_imagem) {
     res.render("criar", {
       message: "Imagem é obrigatório",
     });
