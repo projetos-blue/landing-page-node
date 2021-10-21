@@ -11,13 +11,18 @@
 
 <body>
     <nav>
-        <img src="/img/logo-blue.gif" class="img-fluid gif" alt="Animação Logo Blue">
+        <img src="/img/logo net.png" class="img-fluid gif">
         <ul>
             <li>
-                <a href="/">Home</a>
+                <a href="/">Página Inicial</a>
             </li>
         </ul>
     </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
     <% if(message != "") {  %>
         <section id="message">
@@ -30,16 +35,16 @@
         <form action="/deletar/<%= filme.id %>" method="POST">
             <div>
                 <label for="nome">Digite o nome do filme: </label>
-                <input type="text" name="nome" id="nome" placeholder="Nome do filme" value="<%= filme.filmes_nome %>">
+                <input type="text" name="nome" id="filmes_nome" placeholder="Nome do filme" value="<%= filme.filmes_nome %>">
             </div>
         
             <div>
                 <label for="descricao">Digite a descrição do filme: </label>
-                <input type="text" name="descricao" id="descricao" placeholder="Descrição" value="<%= filme.filmes_descricao %>">
+                <input type="text" name="descricao" id="filmes_descricao" placeholder="Descrição" value="<%= filme.filmes_descricao %>">
             </div>
             <div>
                 <label for="imagem">Coloque o link para a imagem do filme: </label>
-                <input type="text" name="imagem" id="imagem" placeholder="Link da imagem" value="<%= filme.filmes_imagem %>">
+                <input type="text" name="imagem" id="filmes_imagem" placeholder="Link da imagem" value="<%= filme.filmes_imagem %>">
             </div>
         
             <button type="submit">DELETAR!</button>
@@ -49,7 +54,12 @@
 
     <footer>
         <p>
-            Copyright Netzon+ | <a href="https://instagram.com/rafmob" target="_blank"> @rafmob</a> . Todos os direitos reservados.
+            <br>
+            <br>
+            <br>
+            <br>
+            Copyright Netzon+. Todos os direitos reservados. <br>
+            Desenvolvedores <a href="https://instagram.com/rafmob" target="_blank"> Rafael Mendes</a> | <a href="https://instagram.com/tiago.lima.1042" target="_blank"> Tiago Lima </a>
         </p>
     </footer>
     <script src="/js/script.js"></script>
