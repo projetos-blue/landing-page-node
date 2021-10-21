@@ -11,19 +11,23 @@
 
 <body>
     <nav>
-        <img src="/img/logo net.png" class="img-fluid gif" alt="Animação Logo Blue">
+        <img src="/img/logo net.png" class="img-fluid gif">
         <ul>
             <li>
                 <a href="/">Página Inicial</a>
             </li>
         </ul>
     </nav>
-    
-    <section id="detalhes">
-            <section class="card">
+    <br>
+    <br>
+    <br>
+    <section id="destaques">
+            <section class="cardD">
                 <article id="content">
                         <ul>
-                            <li>Nome: <%= filme.filmes_nome %></li>
+                            <span id="tituloDetalhe">
+                                <li><%= filme.filmes_nome %></li>
+                            </span>
                             <li>Descrição: <%= filme.filmes_descricao %></li>
                             <a href="/">
                                 <img src="<%= filme.filmes_imagem %>" width=200>
@@ -36,7 +40,12 @@
 
     <footer>
         <p>
-            Copyright Netzon+ | <a href="https://instagram.com/rafmob" target="_blank"> @rafmob</a> . Todos os direitos reservados.
+            <br>
+            <br>
+            <br>
+            <br>
+            Copyright Netzon+. Todos os direitos reservados. <br>
+            Desenvolvedores <a href="https://instagram.com/rafmob" target="_blank"> Rafael Mendes</a> | <a href="https://instagram.com/tiago.lima.1042" target="_blank"> Tiago Lima </a>
         </p>
     </footer>
     <script src="/public/js/script.js"></script>
