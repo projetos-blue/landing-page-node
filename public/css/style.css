@@ -118,6 +118,12 @@
     font-weight: bold;
     color: #B20710;
   }
+
+  span#tituloDetalhe {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #B20710;
+  }
   
   section#destaques {
     background-color: #141414;
@@ -137,6 +143,22 @@
     flex-wrap: initial;
     margin-right: 15px;
     justify-content: space-around;
+    width: 25%;
+    position: relative;
+  }
+
+  section#destaques section.cardD {
+    max-width: 360px;
+    background-color: #fff;
+    border-right: 12px;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: initial;
+    margin-right: 15px;
+    justify-content: space-around;
+    align-items: center;
     width: 25%;
     position: relative;
   }
